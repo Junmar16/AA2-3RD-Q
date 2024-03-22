@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anagram Checker</title>
+    <script>
+        function checkAnagram() {
+            var input1 = prompt("Enter the first word/phrase:").toLowerCase().split('').sort().join('').trim();
+            var input2 = prompt("Enter the second word/phrase:").toLowerCase().split('').sort().join('').trim();
+
+            if (input1 === input2) {
+                alert("The words/phrases are anagrams.");
+            } else {
+                alert("The words/phrases are not anagrams.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Anagram Checker</h1>
+    <button onclick="checkAnagram()">Check Anagram</button>
+</body>
+</html>
